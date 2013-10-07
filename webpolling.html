@@ -1,0 +1,22 @@
+<head>
+  <title>webpolling</title>
+</head>
+
+<body>
+  {{> mystuff}}
+</body>
+
+<template name="mystuff">
+  <h1>My Stuff</h1>
+  <table>
+    <tbody>
+    {{#each stuffs}}
+      <tr>
+        <td><strong>{{name}}</strong></td>
+        <td><button class="remove">Remove</button></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <input type="text" id="message" />
+</template>
